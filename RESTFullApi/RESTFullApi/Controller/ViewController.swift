@@ -30,7 +30,9 @@ class ViewController: UIViewController {
     }
     
     private func loadDate() {
-        guard let url = URL(string: "https://reqres.in/api/users") else { return }
+        //guard let url = URL(string: "https://reqres.in/api/users") else { return }
+        
+        guard let url = URL(string: Api.userUrl) else { return }
         rest.makeRequest(toURL: url, withHttpMethod: .get) { [self] result in
             
             if result.error != nil {
