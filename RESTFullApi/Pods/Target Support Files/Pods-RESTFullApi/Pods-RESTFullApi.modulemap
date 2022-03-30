@@ -1,0 +1,6 @@
+framework module Pods_RESTFullApi {
+  umbrella header "Pods-RESTFullApi-umbrella.h"
+
+  export *
+  module * { export * }
+}
